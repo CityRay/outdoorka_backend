@@ -3,7 +3,7 @@
 ## API
 
 ```http
-https://
+https://test
 ```
 
 ## 參考 `example.env` 建立 `config.env`
