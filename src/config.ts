@@ -2,6 +2,9 @@ import dotenv from 'dotenv';
 
 dotenv.config({ path: './config.env' });
 
+/**
+ * 對應 config.env 的設定
+ */
 class Config {
   public PORT: string | undefined;
   public NODE_ENV: string | undefined;
@@ -21,6 +24,9 @@ class Config {
     this.JWT_SECRET = process.env.JWT_SECRET || 'xxxxxx';
   }
 
+  /**
+   * 驗證設定
+   */
   public validateConfig(): void {
     console.info(this);
     for (const [key, value] of Object.entries(this)) {
