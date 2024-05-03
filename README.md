@@ -6,7 +6,7 @@
 https://test
 ```
 
-## 參考 `example.env` 建立 `config.env`
+### 參考 `example.env` 建立 `config.env`
 
 ```text
 PORT=
@@ -16,7 +16,7 @@ JWT_TOKEN=
 JWT_SECRET=
 ```
 
-## Setup
+### Setup
 
 Node 版本為 `v20.12.0`
 
@@ -24,19 +24,19 @@ Node 版本為 `v20.12.0`
 npm install
 ```
 
-## Develop
+### Develop
 
 ```bash
 npm run dev
 ```
 
-## ESlint Start
+### ESlint Start
 
 ```bash
 npm run lint
 ```
 
-## Swagger
+### Swagger
 
 SwaggerUI ： <http://localhost:3006/api-docs>
 
@@ -44,7 +44,7 @@ SwaggerUI ： <http://localhost:3006/api-docs>
 npm run swagger
 ```
 
-## 使用的工具套件
+### 使用的工具套件
 
 - Node.js
 - Express
@@ -56,3 +56,21 @@ npm run swagger
 - prettier
 - Husky
 - SwaggerUI
+
+### File Structure
+
+```text
+┣ 📂public
+┃ ┗ 📂images
+┣ 📂src
+┃ ┣ 📂connections
+┃ ┣ 📂controllers
+┃ ┣ 📂middleware
+┃ ┣ 📂models
+┃ ┣ 📂routes
+┃ ┣ 📂services
+┃ ┣ 📂types
+┃ ┃ ┣ 📂dto
+┃ ┃ ┣ 📂enum
+┃ ┣ 📂utils
+```
