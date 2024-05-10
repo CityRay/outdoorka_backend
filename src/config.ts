@@ -13,6 +13,7 @@ class Config {
   public DATABASE_PASSWORD: string | undefined;
   public JWT_TOKEN: string | undefined;
   public JWT_SECRET: string | undefined;
+  public JWT_EXPIRES_DAY: any | undefined;
 
   constructor() {
     this.PORT = process.env.PORT || '3000';
@@ -22,6 +23,8 @@ class Config {
     this.DATABASE_PASSWORD = process.env.DATABASE_PASSWORD || '';
     this.JWT_TOKEN = process.env.JWT_TOKEN || 'xxxxxx';
     this.JWT_SECRET = process.env.JWT_SECRET || 'xxxxxx';
+    // eslint-disable-next-line @typescript-eslint/prefer-nullish-coalescing
+    this.JWT_EXPIRES_DAY = process.env.JWT_EXPIRES_DAY || 'xxxxxx';
   }
 
   /**

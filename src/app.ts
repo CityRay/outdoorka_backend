@@ -20,6 +20,7 @@ import swaggerFile from './swagger-output.json';
 // router
 import userSampleRouter from './routes/sample.user';
 import postsSampleRouter from './routes/sample.posts';
+import authRouter from './routes/auth';
 
 // Validate Config
 config.validateConfig();
@@ -49,6 +50,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/api/sample/user', userSampleRouter);
 app.use('/api/sample/post', postsSampleRouter);
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerFile));
+app.use('/api/v1/login', authRouter);
 
 // catch 404
 app.use(routeNotFound);
